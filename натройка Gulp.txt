@@ -1,0 +1,19 @@
+1. npm init
+2. npm i gulp-cli -g  -установка галпа глобально
+3. npm i gulp-cli --save-dev  - установка галпа локально
+4. npm i gulp-sass
+npm i gulp-sass --save-dev
+5. npm i -g browser-sync
+6. npm i browser-sync --save-dev
+7. npm i gulp-autoprefixer
+8. npm i gulp-autoprefixer --save-dev
+9. npm i gulp-clean-css --save-dev
+10. npm i gulp-clean-css --save-dev
+11. npm i --save-dev sass
+12. npm i -g gulp-imagemin
+13. npm i gulp-imagemin --save-dev
+14. npm i -g gulp-htmlmin
+15. 
+16. 
+17. 
+18. 

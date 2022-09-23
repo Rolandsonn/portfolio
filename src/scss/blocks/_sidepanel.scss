@@ -1,0 +1,41 @@
+.sidepanel {
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-between;
+  z-index: 3;
+  gap: 15px;
+  height: 340px;
+  &__divider {
+    // margin-bottom: 15px;
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+  }
+  &__text {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    height: 145px;
+    width: 25px;
+    // transform: rotate(-90deg);
+  }
+  &__descr {
+    display: block;
+    transform: rotate(-90deg) translate(-30%, -260%);
+    width: 150px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    &:hover {
+      fill: aqua;
+    }
+  }
+}
