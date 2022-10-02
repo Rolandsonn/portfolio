@@ -1,28 +1,25 @@
-// // const mainBtn = document.querySelector("#main_button");
-// const mainBtn = document.getElementById("main_button");
-// const backDrop = document.getElementById("backdrop");
-// const modal = document.querySelector(".modal");
-// const btnClose = document.getElementById("btn-close");
-// // console.log(document.body.);
+const hamburger = document.querySelector(".hamburger"),
+  menu = document.querySelector(".menu"),
+  close = document.querySelector(".menu__btn-close"),
+  overlay = document.querySelector(".menu__overlay");
 
-// // const div = document.createElement("div");
-// // div.innerHTML = "<span>Hello</span> World <ul> <li>Это Li</li></ul>";
-// // div.className = "wrapper";
-// // console.log(div);
+function menuToggler(el) {
+  el.classList.toggle("active");
+}
 
-// // document.body.append(div);
-// // setTimeout(() => div.remove(), 3000);
-// mainBtn.addEventListener("click", () => {
-//   modaltoggler(backDrop);
-// });
-// backDrop.addEventListener("click", (e) => {
-//   if (e.target === e.currentTarget) {
-//     modaltoggler(backDrop);
-//   }
-// });
-// btnClose.addEventListener("click", () => {
-//   modaltoggler(backDrop);
-// });
-// function modaltoggler(el) {
-//   el.classList.toggle("hidden");
-// }
+hamburger.addEventListener("click", () => {
+  menuToggler(menu);
+});
+close.addEventListener("click", () => {
+  menuToggler(menu);
+});
+overlay.addEventListener("click", () => {
+  menuToggler(menu);
+});
+
+const counters = document.querySelectorAll(".skills__ratings-counter"),
+  lines = document.querySelectorAll(".skills__ratings-line span");
+
+counters.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
